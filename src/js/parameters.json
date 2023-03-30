@@ -1,0 +1,89 @@
+{
+  "task": {
+    "rainbow": {
+      "type": "boolean",
+      "default": true
+    },
+    "BallSplat": {
+      "type": "color",
+      "default": "#ea38ec"
+    },
+    "platformColor": {
+      "type": "color",
+      "default": "#262625"
+    },
+    "cylinderColor": {
+      "type": "color",
+      "default": "#797979"
+    },
+    "gradStart": {
+      "type": "color",
+      "default": "#343433"
+    },
+    "gradEnd": {
+      "type": "color",
+      "default": "#A6A6A6"
+    },
+    "bgCity": {
+      "type": "color",
+      "default": "#000000"
+    },
+    "platforms": {
+      "type": "integer",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "default": 30
+    },
+    "spacing": {
+      "type": "float",
+      "min": 5.5,
+      "max": 11.5,
+      "step": 0.1,
+      "default": 8.5
+    },
+    "soundsSet": {
+      "type": "multiple-choice",
+      "options": [
+        { "label": "1st", "value": 1 },
+        { "label": "2nd", "value": 2 },
+        { "label": "3rd", "value": 3 }
+      ],
+      "default": 1
+    },
+    "useTextureForBall": {
+      "type": "boolean",
+      "default": false
+    },
+    "useTextureForPlatforms": {
+      "type": "boolean",
+      "default": false
+    },
+    "useTextureForPole": {
+      "type": "boolean",
+      "default": false
+    },
+    "firstClickSound": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "extra": {
+    "gravity": {
+      "type": "float",
+      "min": 0.15,
+      "max": 0.5,
+      "step": 0.05,
+      "default": 0.35
+    },
+    "difficulty": {
+      "type": "multiple-choice",
+      "options": [
+        { "label": "easy", "value": 1 },
+        { "label": "normal", "value": 2 },
+        { "label": "hard", "value": 3 }
+      ],
+      "default": 2
+    }
+  }
+}

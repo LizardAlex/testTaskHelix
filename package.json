@@ -41,6 +41,9 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "pixi.js": "^5.2.0"
+    "@pixi/filter-advanced-bloom": "^3.2.0",
+    "pixi.js": "^5.2.0",
+    "three": "^0.149.0",
+    "url-loader": "^4.1.1"
   }
 }

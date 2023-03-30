@@ -22,8 +22,17 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(mp3|jpe?g|png|svg)(\?[a-z0-9=&.]+)?$/,
-        use: 'base64-inline-loader?limit=1000&name=[name].[ext]',
+        test: /\.(ttf|mp3|jpe?g|png|svg)(\?[a-z0-9=&.]+)?$/,
+        use: 'base64-inline-loader',
+      },
+     {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto'
+      },
+      {
+        test: /\.(fbx)$/,
+        loader: 'url-loader',
       },
       {
         // Babel
